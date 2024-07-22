@@ -7,7 +7,7 @@ function App() {
   const [latestMessage, setLatestMessage] = useState("");
   const [message, setMessage] = useState("");
   useEffect(() => {
-    const newsocket = new WebSocket("ws://ws2-production.up.railway.app");
+    const newsocket = new WebSocket("wss://ws2-production.up.railway.app");
     newsocket.onopen = () => {
       console.log("Connected");
       setSocket(newsocket);
