@@ -48,8 +48,7 @@ function App() {
       </div>
      <div className = "comp1 para">
       {
-      latestMessage.map((value)=>{
-       
+      Array.isArray(latestMessage) && latestMessage.map((value)=>{
         return <p>{value}</p>
       })
       }
